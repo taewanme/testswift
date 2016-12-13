@@ -6,6 +6,6 @@ WORKDIR /home/swift/
 
 RUN git clone https://github.com/taewanme/testswift.git
 
-WORKDIR /home/swift/testswift
+WORKDIR /home/swift/testswift/swiftcode
 RUN swift build
-RUN cp /home/swift/testswift/.build/debug/testswift /usr/local/bin
+RUN cp /home/swift/testswift/swiftcode/.build/debug/testswift /usr/local/bin
